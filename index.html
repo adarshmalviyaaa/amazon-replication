@@ -1,0 +1,617 @@
+<html>
+<head>
+    <title>
+    Online Shopping site in India:Shop</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+       <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"></head>
+    <style media="screen">
+  .carousel-cell {
+    width: 90%;
+    }
+
+    /* cell number */
+    .carousel-cell:before {
+      display: block;
+    }
+  </style>
+   
+<body>
+    <section id="navbar">
+    <div class="navbar1">
+        <img src="images/burger-icon.png" id="burger-icon" >
+        <img src="images/logo.png" class="logo">
+        <button id="all" onclick="show()">All <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <div id="all-sub">
+        <ul>
+            <li>All categories</li>
+             <li>Deals</li>
+            <li>Alexa skills</li>
+            <li>Amazon Devices</li>
+            <li>Amazon Fashion</li>
+            <li>Amazon Pantry</li>
+            <li>Appliances</li>
+            <li>Apps and Games</li>
+            <li>Baby</li>
+            <li>Beauty</li>
+            <li>Books</li>
+            <li>Cars & Motorbike</li>
+            <li>Clothing & Accesories</li>
+            <li>Collectibles</li>
+            <li>Computer & Accesories</li>
+            <li>Collectibles</li>
+            <li>Electronics</li>
+            <li>Furniture</li>
+            <li>Garden & Outdoors</li>
+            <li>Gift Cards</li>
+            <li>Grocery & Gourmet Foods</li>
+            <li>Health & Personal Care</li>
+            <li>Home & Kitchen</li>
+            <li>Kewellery</li>
+           
+            </ul></div>
+        <input type="text" name=""class="searchbox-input">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <div class="country" onclick="show2()">
+            <img src="images/flag-400.png" class="flag">
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+            
+        </div>
+        <div class="signin" onclick="show3()">
+         <p class="text-grey">Hello,Sign in</p>
+        <p class="text-white"> Account & Lists <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+        </div>
+        <div class="Returns">
+         <p class="text-grey">Return</p>
+        <p class="text-white"> & Orders</p>
+        </div>
+        <div class="prime" onclick="show1()">
+         <p class="text-grey">Try</p>
+        <p class="text-white" > Prime <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+        </div>
+        <div id="try-prime">
+        <img src="images/IN-Prime-PIN-TryPrime-MultiBen-Apr18-400x400._CB442254244_.jpg"></div>
+        <img src="images/2020-07-21-13-35-www.amazon.in.png" class="cart">
+        <div id="lang">
+            <br>
+            <label class="radio-container"><input type=radio ><span class="circle"></span> English - EN</label><br><hr>
+            <label class="radio-container"><input type=radio><span class="circle"></span> 
+हिन्दी - HI</label><br><hr>
+            <p style="font-size: 10px;"><img src="images/flag-400.png" class="flag1">You are shopping on<br>
+            Amazon.in</p>
+           <br>
+            <p style="color: royalblue; cursor: pointer; font-size: 10px; text-align: center"> Change country/region</p>
+        </div>
+        <div id="signup">
+        <button class="s">Sign IN</button>
+        <br>
+            <div style="display: flex; margin-left: 150px;">
+        <h1>New Customer?</h1><h2>Start here</h2></div>
+            <hr style="margin-top: 5px;"><br>
+            <div style="display: flex;">
+            <div class="division">
+                <p> Your Lists</p>
+                <ul>
+                    <li>Create a Wish List</li>
+                    <li> Find a Wish List</li>
+                    <li> Wish from Any Website</li>
+                    <li>Baby Wish List</li>
+                    <li>Discover Your Style</li>
+                </ul></div>
+            <div class="division">
+                <p> Your Account</p>
+                <ul>
+                    <li>Your Account</li>
+                    <li> Your Orders</li>
+                    <li> Your Wishlist</li>
+                    <li>Ypur Recommendations</li>
+                    <li>Ypur Prime Membership</li>
+                    <li>Your Prime Video</li>
+                    <li>Your Subscribe & Save Items</li>
+                    <li> Membership & Subscribtions</li>
+                    <li>Your Amazon Business account</li>
+                    <li>Your Seller Account</li>
+                    <li>Manage Your Content and Devices</li>
+                </ul></div></div>
+        </div></div>
+        
+        
+            <div class="navbar2">
+
+                <i class="las la-map-marker-alt"></i>
+                <h1 style="color: white; font-size: 14px;">Hello<br>
+                <b>Select your Address</b></h1>
+                <ul>
+                    <li>Mobiles</li>
+                    <li>Bestsellers</li>
+                    <li>Today's Deals</li>
+                    <li>Computers</li>
+                    <li>Pantry </li>
+                    <li>Books</li>
+                    <li>New Releases</li>
+                    <li> Gift Ideas</li>
+                </ul>
+                       
+                <img src="images/unnamed.png" class="lg">
+                <h1 class="download"> Shopping made easy | Download the app<br></h1>
+        </div>
+        
+        <br><br>
+        
+        </section>
+    <nav id="sideNav">
+        <div class="blue"><p><i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i> Hello, Sign in</p><br> </div>
+        <div class="abc">
+        <ul>
+            <p style="margin-left: 35px; margin-top: 20px; color: darkgray; font-family: sans-serif; font-weight: 600; font-size: 15px;"> SHOP BY CATEGORY</p><br>
+        <li> Echo & Alexa <i class="las la-angle-right"></i></li>
+        <li> Fire TV Stick <i class="las la-angle-right"></i></li>
+        <li>  Kindle E-Readers & eBooks<i class="las la-angle-right"></i></li>
+        <li> Audible Audiobooks <i class="las la-angle-right"></i></li>
+        <li> Amazon Prime Video <i class="las la-angle-right"></i></li>
+        <li> Amazon Prime Music <i class="las la-angle-right"></i></li>
+            <hr style="margin:0px 30px;">
+        <li> Mobile,Computers <i class="las la-angle-right"></i></li>
+        <li> TV,Appliances,Electronics <i class="las la-angle-right"></i></li>
+        <li> Men's Fashion <i class="las la-angle-right"></i></li>
+        <li> Women's Fashion  <i class="las la-angle-right"></i></li>
+        <li> Home,Kitchen,pets <i class="las la-angle-right"></i></li>
+        <li> Beauty,Health,Grocery <i class="las la-angle-right"></i></li>
+        <li> Sports.Fitness, Bags,Luggage <i class="las la-angle-right"></i></li>
+        <li> Toys,Baby Products, Kids' Fashion <i class="las la-angle-right"></i></li>
+         <li> Car, Motorbike, Industrial <i class="las la-angle-right"></i></li>
+        <li> Books & Audible<i class="las la-angle-right"></i></li>
+         <li> Gift Cards & Mobile Reachrges <i class="las la-angle-right"></i></li>
+         <li> Flight Tickets <i class="las la-angle-right"></i></li>
+        </ul></div><hr style="margin:0px 30px;">
+        <div><ul>
+            <p style="margin-left: 35px; margin-top: 20px; color: darkgray; font-family: sans-serif; font-weight: 600; font-size: 15px;"> HELP & SETTINGS</p>
+            <li>Your Account</li>
+            <li> Customer Service</li>
+            <li> Sign In</li></ul>
+        </div>
+         
+        
+        
+       </nav>
+
+    <div id="black">
+    </div>
+    <div id="cross"><i class="las la-times"></i></div>
+
+    <section><br><br><br>
+        <div class="carousel">
+    <div class="carousel-slide">
+        <img src="images/3000x1200_main_1x._CB409438475_.jpg" >
+        <img src="images/D14588853_IN_WLME_Xiaomi_Landing_Page_DesktopTallHero_1500x600._CB430441142_.jpg">
+        <img src="images/DesktopHero_1500x600_IMC_Unrec._CB428573416_.jpg">
+        <img src="images/TallHero_1500x600-Budget-buys-Footwear._CB410464520_.jpg">
+        </div>
+      
+        
+        </div>
+      <button id="Prev"><i class="las la-angle-left"></i></button>
+        <button id="Next"><i class="las la-angle-right"></i></button>
+    </section>
+    <br>
+    
+    <section id="sales">
+        <div class="box"><h1>Top Picks for your home</h1> <img src="images/ref.png" class="images"><p style="margin-top: 10px;">See more</p>
+        </div>
+        <div class="box"> <h1>Donations, recharges, bills, medicines & more</h1><img src="images/2020-07-23-16-54-www.amazon.in.png" class="images"><p style="margin-top: 20px;">See more</p>
+        </div>
+        <div class="box"><h1>Unique products from small businesses</h1><img src="images/2020-07-23-16-57-www.amazon.in.png" class="images"><p style="margin-top: 20px;">Explore offers</p>
+        </div>
+        <div class="box"><h1>Sign in for your best experience</h1><button> Sign in Securely</button>
+            <img src="images/2020-07-23-17-02-www.amazon.in.png" class="laptop">
+        </div>
+        
+    </section>
+    <br>
+    <section id="sales2">
+    <div class="box"><h1>Women’shome wear basics</h1> <img src="images/2020-07-23-18-22-www.amazon.in.png" class="images"><p style="margin-top: 10px;">View All offers</p>
+        </div>
+        <div class="box"><h1>Home essentials | Amazon Brands & more</h1> <img src="images/2020-07-23-18-26-www.amazon.in.png" class="images"><p style="margin-top: 10px;">See more</p>
+        </div>
+        <div class="box"><h1>Under ₹400 | Free delivery</h1> <img src="images/2020-07-23-18-26-www.amazon.in%20(1).png" class="images"><p style="margin-top: 10px;">Best Bargain Finds</p>
+        </div>
+        <div class="box"><h1>Car & bike care</h1> <img src="images/2020-07-23-18-27-www.amazon.in.png" class="images"><p style="margin-top: 10px;">See more</p>
+        </div>
+    </section>
+  <br>
+    <section id="today-deals" >
+        <div style="display: flex">
+        <h1 style="margin-left: 20px; margin-top: 20px"> Today's deals </h1><p style="margin-top: 28px; color: blue; margin-left: 20px;">See all deals</p></div>
+        <div class="carousel1">
+            <div class="carouselslide1">
+                <img src="images/Web%201920%20%E2%80%93%201%20(1).png">
+                <img src="images/Web%201920%20%E2%80%93%202%20(1).png">
+                
+                
+                
+            </div>
+        </div>
+    <button id="Prev1"><i class="las la-angle-left"></i></button>
+        <button id="Next1"><i class="las la-angle-right"></i></button>
+    
+    </section>
+    <br>
+    <section id="sports"><div ><h1 style="margin-left: 20px; padding-top: 20px">Best Sellers in Sports, Fitness & Outdoors</h1></div>
+    <div class="carousel2">
+        <div class="carouselslide2">
+            <img src="images/2020-07-23-20-00-www.amazon.in.png">
+            <img src="images/2020-07-23-20-01-www.amazon.in.png">
+            <img src="images/2020-07-23-20-01-www.amazon.in%20(2).png">
+        
+        </div></div>
+         <button id="Prev2"><i class="las la-angle-left"></i></button>
+        <button id="Next2"><i class="las la-angle-right"></i></button>
+    
+    </section>
+    <section id="sales3">
+    <div class="box"><h1>Upgrade to smart TV with smart devices</h1> <img src="images/2020-07-23-21-06-www.amazon.in.png" class="images"><p style="margin-top: 10px;">See more</p>
+        </div>
+    <div class="box"><h1>Go Eco-friendly on World Nature Conservation Day</h1> <img src="images/2020-07-23-21-09-www.amazon.in.png" class="images"><p style="margin-top: 10px;">See more</p>
+        </div>
+        <div class="box"><h1>Up to 50% off | Gaming Gadgets</h1> <img src="images/2020-07-23-21-10-www.amazon.in.png"class="images"><p style="margin-top: 10px;">See all offers</p>
+        </div>
+        <div class="box"><h1>Samsung: The Serif | Just launched | Alexa bulit-in</h1> <img src="images/2020-07-23-21-12-www.amazon.in.png"class="images"><p style="margin-top: 10px;">See more</p>
+        </div>
+    </section>
+    <section id="primeday">
+    <img src="images/2020-07-23-21-14-www.amazon.in.png"></section>
+    
+    <section id="sports"><div ><h1 style="margin-left: 20px; padding-top: 20px">Best Sellers in Computers and Accessories</h1></div>
+    <div class="carousel3">
+        <div class="carouselslide3">
+           <img src="images/2020-07-23-21-21-www.amazon.in.png">
+            <img src="images/2020-07-23-21-22-www.amazon.in.png">
+            <img src="images/2020-07-23-21-23-www.amazon.in.png">
+        
+        </div></div>
+         <button id="Prev3"><i class="las la-angle-left"></i></button>
+        <button id="Next3"><i class="las la-angle-right"></i></button>
+    
+    </section>
+    <img src="images/2020-07-23-21-34-www.amazon.in.png" class="hm">
+    <section id="sales4">
+         <div class="box"><h1>Up to 50% off | Chimneys</h1> <img src="images/2020-07-23-21-41-www.amazon.in.png" class="images"><p style="margin-top: 10px;">See more</p>
+        </div>
+        <div class="box"><h1>Must have stationery essentials</h1> <img src="images/2020-07-23-21-44-www.amazon.in.png"class="images"><p style="margin-top: 10px;">See more</p>
+        </div>
+        <div class="box"><h1>Masks, sanitizers & more</h1> <img src="images/2020-07-23-21-45-www.amazon.in.png" class="images"><p style="margin-top: 10px;">See more</p>
+        </div>
+        <div class="box"><h1>Snack time treats for the family</h1> <img src="images/2020-07-23-21-46-www.amazon.in.png"class="images"><p style="margin-top: 8px;">See more</p>
+        </div>
+                
+
+    
+    </section>
+    <br>
+    
+    <section id="newuser">
+        <br><br><hr><br><br>
+        <p style="font-size: 12px;">See personalized recommendations</p>
+        <button class="sn">Sign in</button>
+        <p style="font-size: 10px">New customer? <a style="font-size: 10px; color: blue">Start here</a></p>
+        <br>
+        <hr>
+    
+    </section>
+    <section id="footer">
+    <a href="#navbar"><button id="top">
+        Back to top</button></a>
+        <div class="part1">
+            <div class="bla">
+        <div class="content">
+            <h1>Get to Know Us</h1>
+            <br>
+            <ul>
+                <li>About us</li>
+                <li>Careers</li>
+                <li>Press Releases</li>
+                <li>Amazon Cares</li>
+                <li>Gift a Smile</li>
+                
+            </ul></div>
+         <div class="content">
+            <h1>Connect with Us</h1>
+            <br>
+            <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+                
+                
+            </ul></div>
+            <div class="content">
+            <h1>Make Money with Us</h1>
+            <br>
+            <ul>
+                <li>Sell on Amazon</li>
+                <li>Sell under Amazon Accelerator</li>
+                <li>Become an Affliate</li>
+                <li>Fulfillment by Amazon</li>
+                <li>Advertise your Products</li>
+                <li>Amazon Pay on Merchants</li>
+                
+            </ul></div>
+            <div class="content">
+            <h1>Let us Help You</h1>
+            <br>
+            <ul>
+                <li>COVID-19 and Amazon</li>
+                <li>Your Account</li>
+                <li>Returns Centre</li>
+                <li>100% Purchase Protection</li>
+                <li>Amazon App Download</li>
+                <li>Amazon Assistant Download</li>
+                <li>Help</li>
+                
+                </ul></div></div><br><br>
+        <div class="line"></div>
+        <img src="images/logo-removebg-preview.png" class="logo-bg">
+        <button class="language"><i class="las la-globe"></i> English    <i class="las la-arrows-alt-v"></i></button><br><br>
+        <ul class="list1">
+            <li>Australia</li>
+            <li>Brazil</li>
+            <li>Canada</li>
+            <li>China</li>
+            <li>France</li>
+            <li>Germany</li>
+            <li>Italy</li>
+            <li>Japan</li>
+            <li>Mexico</li>
+            <li>Netherlands</li>
+            <li>Singapore</li>
+            <li>Spain</li>
+            <li>United Arab Emirates</li>
+            <li>United Kingdom</li>
+            <li>United States</li>
+            </ul></div>
+        
+        <div class="part2">
+            <div class="bottom">
+                <div class="margin">
+        <h1>Abebooks</h1>
+            <h2>Books, art <br>& collectibles</h2></div>
+             <div class="margin">
+        <h1>Amazon Web Services</h1>
+            <h2>Scalable Cloud<br>
+                 Computing Services</h2></div>
+            <div class="margin">
+        <h1>Audible</h1>
+            <h2>Download<br> Audible Books</h2></div>
+            <div class="margin">
+        <h1>DPReview</h1>
+            <h2>Digital<br>Photography</h2></div>
+            <div class="margin">
+        <h1>IMDb</h1>
+            <h2>Movies,TV <br>& Celebrites</h2></div></div>
+        <div class="bottom">
+                <div class="margin">
+        <h1>Shopping</h1>
+            <h2>Designer <br>& Fashion Brands</h2></div>
+             <div class="margin">
+        <h1>Amazon Business</h1>
+            <h2>Everything For<br>
+                 Your Business</h2></div>
+            <div class="margin">
+        <h1>APrime Now</h1>
+            <h2>2-Hour Delivery<br>on Everyday Items</h2></div>
+            <div class="margin">
+        <h1>Amazon Prime Music</h1>
+            <h2>60 Million Songs</h2></div>
+           </div><br>
+        <div class="last">
+            <h1> Conditions of Use & Sale</h1>
+            <h1>Privacy Notice</h1>
+            <h1> Internet-Based Ads</h1>
+            <h2><i class="las la-copyright"></i>1996-2020, Amazon.com, Inc. or its affiliates</h2></div></div>
+    </section>
+   
+   
+    <script>
+        const carouselslide= document.querySelector(".carousel-slide");
+        const carouselimages= document.querySelectorAll(".carousel-slide img");
+        const prevBtn= document.querySelector("#Prev");
+        const nextBtn= document.querySelector("#Next");
+        
+        let counter=1;
+        const size= carouselimages[0].clientWidth;
+        carouselslide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+        counter++;
+        
+        
+        nextBtn.addEventListener("click", () =>{
+            carouselslide.style.transition = "transfrom 0.5s ease-in-out";
+            counter++;
+            carouselslide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+        
+        });
+        prevBtn.addEventListener("click", () =>{
+            carouselslide.style.transition = "transfrom 0.5s ease-in-out";
+            counter--;
+            carouselslide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+        
+        });
+        
+         const carouselslide1= document.querySelector(".carouselslide1");
+        const carouselimages1= document.querySelectorAll(".carouselslide1 img");
+        const prevBtn1= document.querySelector("#Prev1");
+        const nextBtn1= document.querySelector("#Next1");
+        
+        let counter1=1;
+        const size1= carouselimages1[0].clientWidth;
+        carouselslide1.style.transform = 'translateX(' + (-size1 * counter1) + 'px)';
+        counter++;
+        
+        
+        nextBtn1.addEventListener("click", () =>{
+            carouselslide1.style.transition = "transfrom 0.5s ease-in-out";
+            counter1++;
+            carouselslide1.style.transform = 'translateX(' + (-size1 * counter1) + 'px)';
+        
+        });
+        prevBtn1.addEventListener("click", () =>{
+            carouselslide.style.transition = "transfrom 0.5s ease-in-out";
+            counter1--;
+            carouselslide1.style.transform = 'translateX(' + (-size1 * counter1) + 'px)';
+        
+        });
+        
+         const carouselslide2= document.querySelector(".carouselslide2");
+        const carouselimages2= document.querySelectorAll(".carouselslide2 img");
+        const prevBtn2= document.querySelector("#Prev2");
+        const nextBtn2= document.querySelector("#Next2");
+        
+        let counter2=1;
+        const size2= carouselimages2[0].clientWidth;
+        carouselslide2.style.transform = 'translateX(' + (-size2 * counter2) + 'px)';
+        counter++;
+        
+        
+        nextBtn2.addEventListener("click", () =>{
+            carouselslide2.style.transition = "transfrom 0.5s ease-in-out";
+            counter2++;
+            carouselslide2.style.transform = 'translateX(' + (-size2 * counter2) + 'px)';
+        
+        });
+        prevBtn2.addEventListener("click", () =>{
+            carouselslide2.style.transition = "transfrom 0.5s ease-in-out";
+            counter2--;
+            carouselslide2.style.transform = 'translateX(' + (-size2 * counter2) + 'px)';
+        
+        });
+        
+        const carouselslide3= document.querySelector(".carouselslide3");
+        const carouselimages3= document.querySelectorAll(".carouselslide3 img");
+        const prevBtn3= document.querySelector("#Prev3");
+        const nextBtn3= document.querySelector("#Next3");
+        
+        let counter3=1;
+        const size3= carouselimages3[0].clientWidth;
+        carouselslide3.style.transform = 'translateX(' + (-size3 * counter3) + 'px)';
+        counter++;
+        
+        
+        nextBtn3.addEventListener("click", () =>{
+            carouselslide3.style.transition = "transfrom 0.5s ease-in-out";
+            counter3++;
+            carouselslide3.style.transform = 'translateX(' + (-size3 * counter3) + 'px)';
+        
+        });
+        prevBtn3.addEventListener("click", () =>{
+            carouselslide3.style.transition = "transfrom 0.5s ease-in-out";
+            counter3--;
+            carouselslide3.style.transform = 'translateX(' + (-size3 * counter3) + 'px)';
+        
+        });
+    </script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+   <script>
+       
+       var a=1;
+       function show()
+       {
+           if(a==0)
+               {
+                   document.getElementById("all-sub").style.display="inline";
+                   return a=1;
+               }
+           else{
+               document.getElementById("all-sub").style.display="none";
+               return a=0;
+           }
+       }
+       var b;
+       function show1()
+       {
+           if(b==0)
+               {
+                   document.getElementById("try-prime").style.display="inline";
+                   return b=1;
+               }
+           else{
+               document.getElementById("try-prime").style.display="none";
+               return b=0;
+           }
+       }
+        var c;
+       function show2()
+       {
+           if(c==0)
+               {
+                   document.getElementById("lang").style.display="inline";
+                   return c=1;
+               }
+           else{
+               document.getElementById("lang").style.display="none";
+               return c=0;
+           }
+       }
+       var d;
+       function show3()
+       {
+           if(d==0)
+               {
+                   document.getElementById("signup").style.display="inline";
+                   return d=1;
+               }
+           else{
+               document.getElementById("signup").style.display="none";
+               return d=0;
+           }
+       }
+        var menuBtn =document.getElementById("burger-icon");
+         var sideNav =document.getElementById("sideNav");
+         var black =document.getElementById("black");
+       var crossBtn=document.getElementById("cross")
+         sideNav.style.left ="-450px";
+             menuBtn.onclick = function(){
+                 if(sideNav.style.left == "-450px"){
+                     sideNav.style.left = "0";
+                     black.style.display="block";
+                     crossBtn.style.display="block";
+                 }
+                 else{
+                     sideNav.style.left = "-250px"
+                     
+                 }
+             }
+             
+var crossBtn = document.getElementById("cross");
+       sideNav.style.left ="-450px";
+             crossBtn.onclick = function(){
+                 if(sideNav.style.left == "-450px"){
+                     sideNav.style.left = "0";
+                 }
+                 else{
+                     sideNav.style.left = "-450px";
+                     black.style.display="none";
+                     crossBtn.style.display="none";
+                 }
+             }
+             var scroll = new SmoothScroll('a[href*="#"]',
+                                          {speed: 2000,
+                                          speedAsDuration: true});
+//    document.getElementById("all").addEventListener("click",function({
+//        var mybox=document.getElementById("all-sub");
+//        if(mybox.style.display=="none")
+//        {
+//        mybox.style.display="block";
+//    }
+//        else{
+//        mybox.style.display="none";
+//        
+//    }
+//    }))
+    </script>
+     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    
+    </body></html>
